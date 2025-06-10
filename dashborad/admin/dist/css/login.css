@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Kanit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #111, #333);
+    color: #fff;
+}
+
+.form {
+    background-color: rgba(37, 37, 37, 0.7);
+    padding: 2rem;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.LoginText {
+    color: #237ce2;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.message {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    position: relative;
+    display: block;
+    margin: 1rem 0;
+    /* เพิ่มระยะห่างระหว่าง label กับ element อื่น ๆ */
+}
+
+.input {
+    width: 80%;
+    /* ลดจาก 100% เป็น 80% */
+    max-width: 360px;
+    /* จำกัดความกว้างสูงสุด */
+    padding: 0.80rem;
+    margin: 0.5rem auto;
+    /* ทำให้ input อยู่ตรงกลาง */
+    margin-top: 1.4rem;
+    /* เพิ่มระยะห่างจาก label หรือ input อื่น ๆ */
+    margin-bottom: 1rem;
+    /* เพิ่มระยะห่างระหว่าง input แต่ละตัว */
+    border: none;
+    border-radius: 9px;
+    /* ปรับให้มุมโค้งมนขึ้น */
+    background-color: rgba(70, 76, 83, 0.9);
+    color: #ddd;
+    display: block;
+}
+
+.input::placeholder {
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+.input:focus {
+    outline: none;
+    background-color: #555;
+}
+
+.submit {
+    width: 77%;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #237ce2;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border: #237ce2 solid 2px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.submit:hover {
+    background-color: rgba(0, 118, 211, 0.6);
+}
+
+.Register {
+    width: 77%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border: #ffffff solid 2px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.Register:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.signin {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 1rem;
+}
+
+.signin a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.signin a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* ให้อยู่ตรงกลาง */
+    text-align: center;
+    margin: 0.7rem 0;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #ffffff;
+    max-width: 30%;
+    /* กำหนดความยาวสูงสุดของเส้น */
+}
+
+.separator::before {
+    margin-right: 0.5em;
+}
+
+.separator::after {
+    margin-left: 0.5em;
+}
+
+.containerlogo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -8px;
+    left: 0;
+    margin: 0;
+    /* เพิ่มระยะห่างจากมุมเล็กน้อย */
+    cursor: pointer;
+}
+
+.logoimg img {
+    max-width: 90px;
+    margin-right: 8px;
+}
+
+.contentText h1 {
+    font-family: 'Kanit', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.contentText p {
+    font-family: 'Kanit', sans-serif;
+    color: #cccccc;
+    font-size: 14px;
+    margin: 0;
+}

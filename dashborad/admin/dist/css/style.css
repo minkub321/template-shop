@@ -1,0 +1,15 @@
+.nav-link:hover {
+    background-color: #334155;
+    color: #fff !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link.active {
+    background-color: #64748b;
+    color: #fff !important;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.user-panel .image img:hover {
+    transform: scale(1.1);
+}
